@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General Sans;
+    color: white;
+}
+
+html, body{
+    width: 100%;
+}
+
+#minicircle{
+    height: 12px;
+    width: 12px;
+    z-index: 9999;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+.main{
+    background-color: black;
+}
+
+#heropage{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: General Sans;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 7vh;
+    font-weight: 500;
+    font-size: 1.9vh;
+}
+#nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+}
+
+#bigtexts{
+    padding: 13vh 0 0 8vh;
+}
+#bigtexts h1{
+    font-size: 10vw;
+    font-weight: 900;
+    opacity: 60%;
+    line-height: 0.88;
+}
+#forsidetext{
+    padding-left: 23vh;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#forsidetext h4{
+    padding-top:2%;
+}
+
+#smallheadings{
+    line-height:2;
+    text-align: right;
+    padding-top: 7.4%;
+    padding-right: 2.5%;
+}
+
+#herofooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5%;
+    padding-top: 0.2%;
+}
+#centerfooter{
+    padding-right: 15%;
+}
+
+#secondpage{
+    padding-top: 25vh;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+#elem{
+    position: relative;
+    border-top: .5px solid grey;
+    width: 90vw;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#elem h1{
+    font-size: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    opacity: 60%;
+}
+.elemlast{
+    border-bottom: 1px solid grey;
+}
+#elem img{
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+    height: 150%;
+}
+
+#about{
+    background-color: black;
+    width: 100%;
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding-left: 75vh;
+    padding-bottom: 10vh;
+}
+#about img{
+    width: 15vw;
+}
+#textabout{
+    padding-right: 22vh;
+    font-size: 2.8vh;
+    font-family: General Sans Medium;
+    line-height: 1.5;
+    font-weight: 0;
+}
+#textabout h6{
+    opacity: 70%;
+}
+#textabout h5{
+    padding-bottom: 2vh;
+}
+#textabout a{
+    text-decoration: none;
+    padding: 12px 22px;
+}
+#talklink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    height: 50px;
+    border: 1px solid white;
+    width: fit-content;
+}
+
+#subscribe{
+    background-color: black;
+    padding-top: 80px;
+    padding-left: 40px;
+    line-height: 1.8;
+}
+#subscribe h5{
+    opacity: .7;
+}
+
+#footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 40px 20px 40px;
+    position: relative;
+}
+#footerleft{
+    display: flex;
+    gap: 30px;
+    font-size: 19px;
+}
+#footerright{
+    display: flex;
+    gap: 20px
+    ;
+}
+#footer a{
+    text-decoration: none;
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(25, 182, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: white;
+    min-height: 500px;
+    width: 500px;
+    border-radius: 3%;
+}
+#toDoHeading{
+    display: flex;
+    color: blue;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+#toDoHeading img{
+    width: 30px;
+    margin-left: 20px;
+}
+
+#list-input{
+    background-color: rgb(62, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 30px 30px;
+    border-radius: 40px;
+}
+#list-input input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    width: 300  px;
+}
+#list-input button{
+    background-color: yellow;
+    outline: none;
+    border: none;
+    padding: 16px 50px;
+    border-radius: 50px;
+    margin-left: 145px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+ul{
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 40px;
+}
+ul li{
+    list-style: none;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -30px;
+    top: 06px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 80px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+ul li span:hover{
+    background-color: grey;
+}

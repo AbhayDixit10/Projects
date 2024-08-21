@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(12, 12, 51);
+    position: relative;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+
+#formBox{
+    min-height: 500px;
+    width: 500px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px 5px black;
+}
+
+.flexing{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.flexing h3{
+    font-weight: 400;
+}
+.flexing input{
+    outline: none;
+    border: none;
+    border-bottom: 0.1px solid black;
+    background-color: transparent;
+    width: 300px;
+}
+
+#message textarea{
+    height: 100px;
+    background-color: transparent;
+    padding: 5px 140px 0 0; 
+    line-height: 1.5; 
+    vertical-align: top; 
+    border: none;
+    resize: none;
+    border-bottom: 1px solid black;
+}
+
+.flexing span{
+    color: red;
+    position: absolute;
+    right: 20px;
+}
+
+#submitBtn{
+    margin-left: 220px;
+    margin-top: 10px;
+    height: 40px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#submitErr{
+    font-size: 20px;
+    color: red;
+    /* display: none; */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validated Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <form>
+        <div id="formBox">
+            <div id="header">
+                <h1>Validated Form</h1>
+            </div>
+            <div id="fullname" class="flexing">
+                <h3>Full Name</h3>
+                <input type="text" id="fullnameInp" placeholder="Write Name">
+                <span id="nameErr"></span>
+            </div>
+            <div id="phone" class="flexing">
+                <h3>Phone No.</h3>
+                <input type="tel" id="phoneInp" placeholder="123 456 7890" maxlength="10">
+                <span id="phoneErr"></span>
+            </div>
+            <div id="email" class="flexing">
+                <h3>Email Id.</h3>
+                <input type="email" id="emailInp" placeholder="Email">
+                <span id="emailErr"></span>
+            </div>
+            <div id="message" class="flexing">
+                <h3>Your Message</h3>
+                <textarea rows="5" placeholder="Enter your message" id="mssgInp"></textarea>
+                <span id="mssgErr"></span>
+            </div>
+            <button id="submitBtn">Submit</button>
+            <span id="submitErr" class="flexing"></span>
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
